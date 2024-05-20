@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LogIn</title>
+</head>
+<body>
+    <h1 class="logo">Front<span class="end">End</span></h1>
+    <section class="sectionLogIn">
+        <div class="tituloLogIn">
+            <h2>Crea tu cuenta</h2>
+            <p>Completa los siguientes datos</p>
+        </div>
+        <div class="divLogIn">
+            <form action="/login" method="post" id="form">
+                <div>
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" name="apellido">
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Contraseña</label><br>
+                    <input type="password" id="password" name="password">
+                </div>
+                    <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+        <p class="pregunta">Ya tenes cuenta?</p>
+        <a href="index.html" class="btn1">Inicia sesión!</a>
+        <p class="warnings" id="warnings"></p>
+        
+    </section>
+
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Bienvenido, <span id="modalUserName"></span>!</h2>
+            <p>Estos son tus datos de acceso:</p>
+            <p>Email: <span id="modalEmail"></span></p>
+            <p>Contraseña: <span id="modalPassword"></span></p>
+        </div>
+    </div>
+
+    <script src="registro.js"></script>
+</body>
+</html>

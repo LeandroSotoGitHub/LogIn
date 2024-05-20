@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LogIn</title>
+</head>
+<body>
+    <h1 class="logo">Front<span class="end">End</span></h1>
+    <section class="sectionLogIn">
+        <div class="tituloLogIn">
+            <h2>Bienvenidos!</h2>
+            <p>Por favor, ingrese sus datos</p>
+        </div>
+        <div class="divLogIn">
+            <form action="/login" method="post" id="form">
+                <div>
+                    <label for="email">Correo electrónico</label><br>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div>
+                    <label for="password">Contraseña</label><br>
+                    <input type="password" id="password" name="password">
+                </div>
+                    <button type="submit" class="btn">LogIn</button>
+            </form>
+        </div>
+        <p class="pregunta">No estas registrado?</p>
+        <a href="registrarse.html" class="btn1">Crea tu cuenta!</a>
+        <p class="warnings" id="warnings"></p>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
